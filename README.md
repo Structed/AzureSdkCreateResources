@@ -1,5 +1,5 @@
 ﻿# Azure SDK Create Resources Example
-A small end-to-end example of how to create a VM with a public IP, and a NIC attached to a vnet/subnet using the new [Azure SDK for .NET](https://aka.ms/azsdk/net).
+A small end-to-end example on how to create a VM with a public IP, and a NIC attached to a vnet/subnet using the new [Azure SDK for .NET](https://aka.ms/azsdk/net).
 
 # Prerequisites
 * [Azure Subscription](https://azure.microsoft.com/en-us/solutions/gaming/)
