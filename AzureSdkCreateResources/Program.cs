@@ -22,9 +22,9 @@ AzureLocation location = AzureLocation.WestEurope;
 
 
 
-var tenantId = Environment.GetEnvironmentVariable("AZ_ROLE_TENANT_ID", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_ROLE_TENANT_ID\", EnvironmentVariableTarget.Process)");
-var clientId = Environment.GetEnvironmentVariable("AZ_ROLE_CLIENT_ID", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_ROLE_CLIENT_ID\", EnvironmentVariableTarget.Process)");
-var clientSecret = Environment.GetEnvironmentVariable("AZ_ROLE_CLIENT_SECRET", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_ROLE_CLIENT_SECRET\", EnvironmentVariableTarget.Process)");
+var tenantId = Environment.GetEnvironmentVariable("AZ_NET_SDK_TENANT_ID", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_NET_SDK_TENANT_ID\", EnvironmentVariableTarget.Process)");
+var clientId = Environment.GetEnvironmentVariable("AZ_NET_SDK_CLIENT_ID", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_NET_SDK_CLIENT_ID\", EnvironmentVariableTarget.Process)");
+var clientSecret = Environment.GetEnvironmentVariable("AZ_NET_SDK_CLIENT_SECRET", EnvironmentVariableTarget.Process) ?? throw new ArgumentNullException("Environment.GetEnvironmentVariable(\"AZ_NET_SDK_CLIENT_SECRET\", EnvironmentVariableTarget.Process)");
 
 // Authenticate the ARM client
 var credentials = new ClientSecretCredential(
